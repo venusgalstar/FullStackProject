@@ -1,0 +1,134 @@
+.navigation {
+  width: 100%;
+  padding-top: 20px;
+  font-size: 1em;
+}
+
+.navigation_fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  background: transparent;
+}
+
+.navigation__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.navigation__logo {
+  margin-left: 2%;
+}
+
+.navigation__menu {
+  display: flex;
+  align-content: center;
+  margin-right: 1%;
+}
+
+
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu__item {
+  display: inline-block;
+  min-width: 60px;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  background: #000000;
+  &:hover {
+    background: linear-gradient(120deg, #e8352a 0%, #ef8029 100%);
+  }
+}
+
+.menu__item_active {
+  background: rgb(218,57,43);
+  background: linear-gradient(120deg, #e8352a 0%, #ef8029 100%);
+}
+
+.menu__item a {
+  display: inline-block;
+  padding: 20px 10px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+@media only screen and (max-width: 319px) {
+  .navigation__logo img {
+    height: 60px;
+  }
+  .navigation {
+    padding: 0;
+  }
+
+  .navigation__logo {
+    margin: 0 auto;
+  }
+
+  .navigation__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navigation__menu {
+    margin: 0;
+    text-align: center;
+  }
+
+  .navigation__menu > .menu {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .navigation__logo img {
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .navigation {
+    padding: 0;
+  }
+
+  .navigation__logo {
+    margin: 0 auto;
+  }
+
+  .navigation__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navigation__menu {
+    margin: 0;
+    text-align: center;
+  }
+
+  .navigation__menu > .menu {
+    flex: 1;
+  }
+
+  //.navigation__menu {
+  //  position: fixed;
+  //  top: 0;
+  //  margin-right: 0;
+  //  width: 100%;
+  //}
+
+  //.navigation__menu {
+  //  display: none;
+  //}
+}

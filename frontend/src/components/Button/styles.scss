@@ -1,0 +1,41 @@
+.button {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+
+  padding: 18px;
+  text-transform: uppercase;
+
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+
+  &:not(.button_static):hover {
+    color: #000;
+    background: #fff;
+  }
+}
+
+.button_default {
+  background: #000000;
+}
+
+.button_primary {
+  background: #EA210F;
+  background: linear-gradient(120deg, #e8352a 0%, #ef8029 100%);
+}
+.nest-header .button_primary {
+  background: #a12a17;
+  background: linear-gradient(120deg, #e8352a 0%, #ef8029 100%);
+}
+.button_static {}
+
+.buttons > .button {
+  margin-right: 15px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
